@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: context-menu;
+    user-select: none;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e4e7ec;
+}
+
+body .block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0 8px 2px #0000001f;
+    border-radius: 10px;
+    padding: 15px;
+    background: white;
+}
+
+body .block #title{
+    font-size: 25pt;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 300;
+    padding-bottom: 10px;
+}
+
+body .block div.start button,
+body .block div.result button{
+    padding: 10px;
+    font-size: 16pt;
+    font-weight: 700;
+    width: 100px;
+    color: white;
+    border: none;
+    background-color: royalblue;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+body .block div.test-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body .block div.test-box div.timer,
+body .block div.result{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30em;
+    font-weight: 800;
+    background-color: #ffffff20;
+    backdrop-filter: blur(5px);
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 2;
+}
+
+body .block div.test-box span{
+    color: #a7a7a7;
+    font-size: 15pt;
+}
+
+body .block div.test-box span#timer,
+body .block div.test-box span#clicker{
+    color: black;
+    font-size: 17pt;
+    font-weight: 400;
+}
+
+body .block div.test-box .box{
+    height: 400px;
+    width: 600px;
+    border: 2px solid #00000013;
+    background-color: #a7a7a711;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    margin: 15px 0;
+    font-size: 12pt;
+    color: #a7a7a7;
+    font-weight: 300;
+    user-select: none;
+}
+
+body .block div.result{
+    font-size: 19pt;
+    display: flex;
+    color: #5a5a5a;
+    font-weight: 300;
+    flex-direction: column;
+    z-index: 4;
+}
+
+body .block div.result h1#total{
+    color: #000;
+    font-size: 15em;
+    font-weight: 300;
+}
+
+body .block div.result #speed{
+    color: black;
+    font-weight: 500;
+    font-size: 25pt;
+}
+
+body .block div.result #unity{
+    font-style: italic;
+}
+
+body .block div.test-box div.timer.no-active,
+body .block div.no-active{
+    display: none;
+}
